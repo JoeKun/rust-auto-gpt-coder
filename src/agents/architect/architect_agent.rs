@@ -144,7 +144,10 @@ impl Agent for SolutionArchitectAgent {
 mod tests {
     use super::*;
 
-    #[tokio::test]
+    // Disable this test for global `cargo test` commands, 
+    // because it requires OpenAI keys in environment variables.
+    //#[tokio::test]
+    #[allow(dead_code)]
     async fn test_solution_architect() {
         let mut agent = SolutionArchitectAgent::new();
         let mut project = Project {

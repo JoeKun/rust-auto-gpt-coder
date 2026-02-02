@@ -106,7 +106,10 @@ mod tests {
         assert_eq!(extended_message.role, Role::System);
     }
 
-    #[tokio::test]
+    // Disable this test for global `cargo test` commands, 
+    // because it requires OpenAI keys in environment variables.
+    //#[tokio::test]
+    #[allow(dead_code)]
     async fn test_ai_task_request() {
         let result = ai_task_request(
             "Build me a web site for making stock price API requests.".to_string(), 

@@ -133,7 +133,10 @@ mod tests {
     use super::*;
     use crate::api::open_ai::request::Role;
 
-    #[tokio::test]
+    // Disable this test for global `cargo test` commands, 
+    // because it requires OpenAI keys in environment variables.
+    //#[tokio::test]
+    #[allow(dead_code)]
     async fn test_call_gpt() {
         let message = Message {
             role: Role::User,
