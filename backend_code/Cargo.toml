@@ -1,0 +1,22 @@
+#
+#  Cargo.toml
+#  backend_code
+#
+#  Created by Joel Lopes Da Silva on 1/25/26.
+#  Copyright © 2026 Joel Lopes Da Silva. All rights reserved.
+#
+
+[package]
+name = "backend_code"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-cors = "0.7.1"
+actix-web = "4.12.1"
+async-trait = "0.1.89"
+dotenv = "0.15.0"
+reqwest = { version = "0.13.1", features = ["json"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+tokio = { version = "1.49.0", features = ["full"] }
