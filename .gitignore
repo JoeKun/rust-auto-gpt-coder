@@ -1,0 +1,15 @@
+#
+#  .gitignore
+#  rust-auto-gpt-coder
+#
+#  Created by Joel Lopes Da Silva on 1/25/26.
+#  Copyright © 2026 Joel Lopes Da Silva. All rights reserved.
+#
+
+/.env
+/target
+/backend_code/Cargo.lock
+/backend_code/schemas/api_schema.json
+/backend_code/src/main.rs
+/backend_code/target
+/database.json
